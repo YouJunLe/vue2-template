@@ -1,0 +1,199 @@
+{
+    "tabnine.experimentalAutoImports": true,
+    // "workbench.colorTheme": "G",
+    "workbench.iconBadge.showNumber": true,
+    "workbench.taskbar.labelVisibility": "labeled",
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1,
+    // 设置自动换行
+    "editor.wordWrap": "off",
+    // eslint插件格式化设置---开始
+    // "eslint.autoFixOnSave": true,
+    //保存时使用自动格式化
+    //验证文件类型
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+        "html",
+        "jsx",
+        // {
+        //     "language": "html",
+        //     "autoFix": true
+        // },
+        // {
+        //     "language": "vue",
+        //     "autoFix": true
+        // }
+    ],
+    // eslint插件格式化设置---结束
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    // 给js-beautify-html设置属性隔断
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_line_length": 120,
+            "wrap_attributes": "force-aligned",
+            /*
+              对属性进行换行。
+              - auto: 仅在超出行长度时才对属性进行换行。
+              - force: 对除第一个属性外的其他每个属性进行换行。
+              - force-aligned: 对除第一个属性外的其他每个属性进行换行，并保持对齐。
+              - force-expand-multiline: 对每个属性进行换行。
+              - aligned-multiple: 当超出折行长度时，将属性进行垂直对齐。
+              */
+            "end_with_newline": true,
+            // Maximum number of line breaks to be preserved in one chunk (0 disables)
+            "max_preserve_newlines": 0
+        },
+        "prettier": {
+            "semi": false,
+            "printWidth": 20,
+            "singleQuote": true,
+            "trailingComma": "none",
+            "eslintIntegration": true
+        }
+    },
+    // js默认偏移一个indent
+    "vetur.format.scriptInitialIndent": false,
+    // style默认偏移一个indent
+    "vetur.format.styleInitialIndent": false,
+    // vetur插件格式化设置----结束
+    // 函数名后增加空格
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.formatOnSave": true,
+    // 保存时自动格式化
+    "editor.codeActionsOnSaveTimeout": 5000,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // "workbench.colorTheme": "SynthWave '84",
+    "terminal.integrated.rendererType": "dom",
+    "leetcode.endpoint": "leetcode-cn",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/bower_components": true,
+        "**/CVS": true,
+        "**/tmp": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/tmp/**": true,
+        "**/bower_components/**": true,
+        "**/dist/**": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "editor.detectIndentation": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "java.semanticHighlighting.enabled": true,
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "update.mode": "manual",
+    "go.toolsManagement.autoUpdate": true,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "editor.unicodeHighlight.allowedCharacters": {
+        "！": true
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "redhat.telemetry.enabled": true,
+    "[dart]": {
+        // Automatically format code on save and during typing of certain characters
+        // (like `;` and `}`).
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+        "editor.rulers": [
+            80
+        ],
+        // Disables built-in highlighting of words that match your selection. Without
+        // this, all instances of the selected text will be highlighted, interfering
+        // with Dart's ability to highlight only exact references to the selected variable.
+        "editor.selectionHighlight": false,
+        // By default, VS Code prevents code completion from popping open when in
+        // "snippet mode" (editing placeholders in inserted code). Setting this option
+        // to `false` stops that and allows completion to open as normal, as if you
+        // weren't in a snippet placeholder.
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // By default, VS Code will pre-select the most recently used item from code
+        // completion. This is usually not the most relevant item.
+        //
+        // "first" will always select top item
+        // "recentlyUsedByPrefix" will filter the recently used items based on the
+        //     text immediately preceding where completion was invoked.
+        "editor.suggestSelection": "first",
+        // Allows pressing <TAB> to complete snippets such as `for` even when the
+        // completion list is not visible.
+        "editor.tabCompletion": "onlySnippets",
+        // By default, VS Code will populate code completion with words found in the
+        // current file when a language service does not provide its own completions.
+        // This results in code completion suggesting words when editing comments and
+        // strings. This setting will prevent that.
+        "editor.wordBasedSuggestions": false,
+    },
+    "workbench.editorAssociations": {
+        "*.docx": "default"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#292961",
+        "activityBar.activeForeground": "#ffffff",
+        "titleBar.activeBackground": "#4b4ba3",
+        "titleBar.activeForeground": "#ffffff"
+    },
+    "editor.snippetSuggestions": "bottom",
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.mac": "/Users/jaquelee/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vscode-kubernetes.helm-path.mac": "/Users/jaquelee/.vs-kubernetes/tools/helm/darwin-amd64/helm"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "window.zoomLevel": -1
+}
