@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Three3D from '../views/Three3D.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    name: 'three',
+    component: Three3D
+  },
+  {
+    path: '/home',
     name: 'home',
     component: HomeView
   },

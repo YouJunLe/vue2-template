@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav>
+    <nav v-if="false">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
@@ -23,8 +23,8 @@ body {
   height: 100vh;
   padding: 0px;
   margin: 0px;
-  background: url('./assets/bg1.jpg') no-repeat;
-  background-size: 100% 100%;
+  //   background: url('./assets/bg1.jpg') no-repeat;
+  //   background-size: 100% 100%;
 }
 
 nav {
