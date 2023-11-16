@@ -1,5 +1,5 @@
 {
-    "name": "vue-cli-ttl",
+    "name": "threejs",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -12,6 +12,7 @@
     "dependencies": {
         "Console": "^1.1.0",
         "core-js": "^3.8.3",
+        "delaunator": "^5.0.0",
         "echarts": "^5.4.3",
         "echarts-gl": "^2.0.9",
         "element-resize-detector": "^1.2.4",
