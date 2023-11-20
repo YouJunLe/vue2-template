@@ -44,8 +44,9 @@ export default {
   data() {
     return {
       loading: false,
-      selFile: '/data/mc/12_000000.pcd',
+      selFile: '/data/12/12_000003.pcd',
       files: [
+        '/data/data.pcd',
         '/data/mc/12_000000.pcd',
         '/data/mc/12_000001.pcd',
         '/data/mc/12_000002.pcd',
@@ -116,11 +117,11 @@ export default {
       this.controls2 = controls2
       */
       // 创建一个点光源
-      const pointLight = new THREE.PointLight(0xf00, 1000, 10)
+      const pointLight = new THREE.PointLight(0xff0, 1000, 10)
       pointLight.position.set(1000, 100, 100)
       scene.add(pointLight)
       // 创建一个环境光源
-      const ambientLight = new THREE.AmbientLight(0xf00) // 弱白光
+      const ambientLight = new THREE.AmbientLight(0xff0) // 弱白光
       ambientLight.position.set(1000, 100, 100)
       scene.add(ambientLight)
       this.scene = scene
@@ -235,17 +236,10 @@ export default {
       camera.position.set(center.x, center.y, center.z)
       camera.lookAt(center)
 
-      const geometry2 = new THREE.BoxGeometry()
-      const material2 = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
-      const cube = new THREE.Mesh(geometry2, material2)
-      cube.position.set(center.x, center.y, center.z + 10)
-      scene.add(cube)
-      this.cube = cube
-
       // 根据需要，可以在这里添加更多属性或进行数据转换
       // 创建点云材质
       // const material = new THREE.PointsMaterial({ size: 0.05, vertexColors: THREE.VertexColors })
-      const material = new THREE.PointsMaterial({ color: 0xff0000, size: 0.01 })
+      const material = new THREE.PointsMaterial({ color: 0xfff000, size: 0.01 })
       // 创建点云并添加到场景
       const geometry = new THREE.BufferGeometry()
       // 假设点云对象具有位置和可选的颜色属性

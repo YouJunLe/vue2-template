@@ -1,0 +1,1 @@
+docker run --name my-nginx1 -d -p 8080:8080 -v /root/nginx-proxy/aws/nginx.conf:/etc/nginx/nginx.conf nginx:latest
